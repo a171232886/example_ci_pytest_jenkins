@@ -11,7 +11,10 @@ pipeline {
         // 获取 Git 提交 SHA
         GIT_COMMIT = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
         // GitHub 仓库路径（避免硬编码）
-        GITHUB_REPO = "a171232886/example_pytest_jenkins"
+        GITHUB_REPO = sh(
+            script: 'git remote -v | head -n1 | awk \'{print $2}\' | sed \'s|git@github.com:||; s|https://github.com/||; s|.git$||\'',
+            returnStdout: true
+        ).trim()
     }
     tools {
         allure 'allure_2.34.1'
