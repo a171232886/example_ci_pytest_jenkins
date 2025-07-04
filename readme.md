@@ -1,4 +1,4 @@
-# Release
+# Releases
 
 两个版本的区别仅在 Jenkinsfile
 
