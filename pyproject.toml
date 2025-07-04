@@ -1,0 +1,30 @@
+[project]
+name = "example"
+version = "1.0.0"
+description = "example"
+requires-python = ">=3.11"
+authors = [
+    { name = "WH", email = "wh@wh.com" }
+]
+
+# TODO: Add version control for each dependency
+dependencies = [
+    "build",
+    "pytest",
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "pytest-result-log",
+    "allure-pytest",
+    "pyyaml",
+    "jsonschema",
+    "jsonpath-ng"
+]
+
+[tool.pypi]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
