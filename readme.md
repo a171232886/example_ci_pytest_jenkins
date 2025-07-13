@@ -12,4 +12,4 @@ How are you?
 
 I'm fine. Think you, and you?
 
-衬衫的价格是九磅十五便士!
+衬衫的价格是九磅十五便士
